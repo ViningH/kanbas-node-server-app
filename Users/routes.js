@@ -54,9 +54,9 @@ export default function UserRoutes(app) {
         if (currentUser) {
             req.session["currentUser"] = currentUser;
             globalCurrentUser = currentUser;
-            res.json(currentUser);
+            res.sendStatus(200).json(currentUser);
         } else {
-            res.sendStatus(401);
+            res.sendStatus(404).json("Password Incorrect");
         }
     };
     const signout = (req, res) => {

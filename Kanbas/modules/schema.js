@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 const moduleSchema = new mongoose.Schema({
     name: String,
     course: { type: String, required: true},
+    id: {type: String, required: true},
     description: String,
     lessons: [
         {
@@ -13,4 +14,4 @@ const moduleSchema = new mongoose.Schema({
     ]
   },
   { collection: "modules" });
-export default moduleSchema;
+export default moduleSchema;aq
