@@ -14,4 +14,4 @@ const moduleSchema = new mongoose.Schema({
     ]
   },
   { collection: "modules" });
-export default moduleSchema;aq
+export default moduleSchema;
